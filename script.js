@@ -1,14 +1,4 @@
-var el_up = document.getElementById("GFG_UP");
-            var el_down = document.getElementById("GFG_DOWN");
-            var str = "Click on button to change the background color";
-          
-            el_up.innerHTML = str;
-          
-            function changeColor(color) {
-                document.body.style.background = color;
-            }
-              
-            function gfg_Run() {
-                changeColor("#"+Math.floor(Math.random()*16777215).toString(16));
-                el_down.innerHTML = "Background Color changed";
-            } 
+function changeColor() {
+    document.body.style.background = ("#"+Math.floor(Math.random()*16777215).toString(16));
+}
+    
